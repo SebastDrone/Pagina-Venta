@@ -1,0 +1,82 @@
+@media (max-width: 920px) {
+    .header {
+        padding: 2% 1%;
+        font-size: 18px;
+    }
+
+    .product-offerContainer {
+        width: 50%;
+        height: 20%;
+        margin: 0 auto;
+    }
+
+    .products-container  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .products-container .product-offerContainer {
+        margin-bottom: 5%;
+    }
+/* ------------------------------------ */
+
+    .product-offerDescription {
+        margin-bottom: 0;
+    }
+    .product-purchaseButton button {
+        margin: 5% 0;
+    }
+
+    .reviews {
+        height: auto;
+        background-color: #0F94F1;
+        background-image: url('../imagen/twitter_logo.png');
+        background-size: 100% 60%;
+        background-position: 0% 0%;
+    }
+
+    .reviews-Container {
+        margin-top: 10%;
+        display: block;
+        width: 50%;
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 5px 0;
+    }
+
+    .review-box {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+        padding-bottom: 10%;
+    }
+
+    .review-boxPicContainer {
+        padding-top: 5px;
+    }
+
+/* ----------------------SCROLLBAR SETTINGS----------- */
+    /* ::-webkit-scrollbar {
+        width: 3px;
+    } */
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 13px;
+    }
+
+    .menu-item {
+        margin-left: 5%;
+    }
+
+    .footer {
+        font-size: 90%;
+    }
+
+
+
+}

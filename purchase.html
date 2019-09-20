@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagen/backpack.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/4k.css">
+    <title>Mochilas Para Ti</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo-imageContainer">
+            <img class="logo-title" src="imagen/MuchilasParaTi.com.svg" alt="logo">
+        </a>
+        <nav class="menu-Bar">
+            <ul class="menu-itemContainer">
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li class="menu-item"><a href="tienda.html">Tienda</a></li>
+                <li class="menu-item"style="display: none"><a href="#">Sobre Nosotros</a></li>
+                <li class="menu-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- ----------------FIN HEADER----------------------------------------------- -->
+    <section class="purchase-infoContainer">
+        <figure class="purchase-productImageContainer">
+            <img src="imagen/Recomendation.png" alt="Producto Comprado">
+        </figure>
+        <form action="succesful.html" method="post" class="purchase-form">
+            <input class="input-normal" type="text" name="name-user" id="name-user" placeholder="Nombre">
+            <input class="input-normal" type="text" name="surname-user" id="surname-user" placeholder="Apellidos">
+            <input class="input-normal" type="email" name="mail-user" id="mail-user" placeholder="E-mail">
+            <input class="input-age" class="input-age" type="text" name="day-user" id="day-user" placeholder="DD" min="1" max="31">
+            <input class="input-age" type="text" name="month-user" id="month-user" placeholder="MM">
+            <input class="input-age" type="text" name="year-user" id="year-user" placeholder="AAAA">
+            <br>
+            <button type="submit" class="final-purchase">Comprar</button>
+        </form>
+    </section>
+<!-- ----------------FIN FORM------------------------------------- -->
+    <footer class="footer footer-purchase">
+        <p class="terms-condition"><a href="terms.html">Terminos y Condiciones</a></p>
+        <p class="terms-condition"><a href="credits.html">Credito de las imagenes</a></p>
+        <p class="terms-condition"><a href="mailto:con">mochilas@contact.com</a></p>
+    </footer>
+</body>
+</html>

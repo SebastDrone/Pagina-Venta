@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+:root {
+    /* ------COLORS---------- */
+    --black-Color: #363636;
+    --blue-darkColor: #3E63B5;
+    --blue-lightColor: #dee7ff;
+    --blue-twitterColor: #1ABFDF;
+    --gray-darkColor: #C4C4C4;
+    --gray-darkerColor: #707070;
+    --green-color: #1DCC7A;
+    --red-Color: #EB6E79;
+    --red-darkColor: #A34850;
+    --white-lightColor: #FCFCFC;
+    --white-totalColor: #FFFFFF;
+    /* --------FONTS---------- */
+    --open-SansFont: 'Open Sans', sans-serif;
+    --roboto-Font: 'Roboto', sans-serif;
+    --default-Font: 'Times New Roman', Times, serif;
+
+    /* ---------BOX SHADOW------- */
+    --shadow-properties: 1px 1px 3px 2px var(--black-Color);
+}
+
+/* ---------------------------------------GENERAL---------------------------------------- */
+body {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--black-Color);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.text-forMobile {
+    display: none;
+}
+
+/* -----------------------------------------HEADER---------------------------------------S */
+.header {
+    width: 100%;
+    height: auto;
+    background-color: var(--blue-darkColor);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-imageContainer {
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.logo-imageContainer .logo-title
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* MENU BAR */
+
+.menu-Bar {
+    width: 30%;
+    height: 100%;
+    margin-right: 5%;
+    padding: 1.4% 0;
+}
+
+.menu-itemContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0%;
+}
+
+
+.menu-item {
+    list-style-type: none;
+    margin-right: 5%;
+    font-weight: bold;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var(--white-totalColor);
+    font-size: 100%;
+
+}
+
+/* ------------------------------FIN HEADER----------------------- */
+.hero {
+    width: 100%;
+    background-image: url('../imagen/hero_background.jpg');
+    background-position: 0 0;
+    background-size: 100% 100%;
+    height: auto;
+    padding: 3% 6%;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.hero-titleContainer {
+    text-align: center;
+}
+
+.hero-Title {
+    font-size: 200%;
+    font-family: var(--open-SansFont);
+    color: var(--white-totalColor);
+    margin-bottom: 5%;
+
+}
+
+.product-offerContainer {
+    display: inline-block;
+    background-color: var(--white-totalColor);
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    border-radius: 5%;
+    margin-left: 9%;
+    box-shadow: var(--shadow-properties);
+    
+}
+
+.product-offerPicContainer {
+    margin: 5% 25%;
+    background-color: var(--white-lightColor);
+    text-align: center;
+}
+
+.product-offerPicContainer img {
+    width: 80%;
+    height: 80%;
+}
+
+.product-offerName {
+    font-size: 120%;
+    text-align: center;
+    font-family: var(--roboto-Font);
+    font-weight: 200;
+    margin: 5% 5%;
+}
+
+.product-offerDescription {
+    font-size: 90%;
+    margin: 0 15% 10%;
+    line-height: 140%;
+    text-align: left;
+}
+
+.product-purchaseButton {
+    height: 40%;
+}
+
+.product-purchaseButton button, .final-purchase{
+    margin: 10% 0;
+    padding: 5% 0;
+    width: 80%;
+    height: 50%;
+    font-family: var(--open-SansFont);
+    font-weight: bolder;
+    font-size: 120%;
+    color: var(--white-totalColor);
+    background-color: var(--red-Color);
+    border: 1px solid var(--red-darkColor);
+    border-radius: 5px;
+}
+
+.product-purchaseButton button:hover, .final-purchase:hover {
+    background-color: var(--red-darkColor);
+    color: var(--white-lightColor);
+    cursor: pointer;
+}
+
+/* -----------------------FIN HERO---------------- */
+.reviews {
+    background-image: url('../imagen/twitter.jpg');
+    background-color: var(--blue-twitterColor);
+    background-size: 100% 100%;
+    background-position: -50px 200px;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    font-family: inherit;
+    font-size: inherit;
+    border-bottom: var(--blue-twitterColor) solid 1px;
+}
+
+.reviews-Container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.review-box {
+    background-color: var(--white-totalColor);
+    width: 20%;
+    height: auto;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    box-shadow: var(--shadow-properties);
+}
+
+.review-boxPicContainer {
+    width: 40%;
+    height: 40%;
+    margin: 5% auto;
+    
+}
+
+.review-boxPicContainer .review-personPic {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.review-personTwitter {
+    width: 40%;
+    height: 10%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.review-twitterId {
+    font-family: var(--roboto-Font);
+    font-size: 105%;
+}
+
+.review-description {
+    width: 70%;
+    height: 50%;
+    margin: 5% auto;
+    text-align: left;
+    font-size: 90%;
+    line-height: 150%;
+}
+/* -----------------------SOCIAL NETWORKS--------------- */
+.social-networks {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5%;
+}
+
+.social-Title {
+    color: var(--black-Color);
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.social-networkContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* ----------------------FOOTER------------------------- */
+
+.footer {
+    background-color: var(--black-Color);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1% 1%;
+}
+
+.terms-condition a {
+    display: flex;
+    text-decoration: none;
+    color: var(--white-totalColor);
+}
+/* ----------------------TERMS AND CONDITIONS------------ */
+.terms {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.terms-Title {
+    font-size: 300%;
+    letter-spacing: .2em;
+    margin: 5% 0 3% 10%;
+}
+
+.terms-conditions {
+    border: 1px solid lightgray;
+    width: 60%;
+    margin: 0 auto 5%;
+    padding: 3% 1% 5%;
+}
+
+.terms-conditions p {
+    font-family: var(--open-SansFont);
+    font-weight: normal;
+}
+
+/* --------------------FIN TERMS AND CONDITIONS--------------------- */
+.faq {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.faq-Title {
+    margin-left: 20%;
+    font-weight: normal;
+    font-size: 400%;
+    letter-spacing: normal;
+}
+
+.faq-Container {
+    width: 65%;
+    height: 90%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-container {
+    border: 1px solid var(--gray-darkerColor);
+    height: 40%;
+    margin-bottom: 10%;
+}
+
+.question {
+    background-color: var(--gray-darkColor);
+    padding: 5px;
+    font-family: var(--open-SansFont);
+    font-size: 90%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.question-answer {
+    background-color: var(--white-lightColor);
+    padding: 2% 3%;
+    font-size: 90%;
+    font-family: var(--open-SansFont);
+    font-weight: normal;
+    text-align: left;
+}
+/* -------------------------FIN FAQ---------------------------- */
+.shop {
+    width: 80%;
+    height: 90%;
+    margin: auto auto;
+}
+
+.products-container {
+    width: 100%;
+    padding: 5%;
+}
+
+.product-margin {
+    margin-bottom: 5%;
+}
+/* --------------------------FIN SHOP---------------------------- */
+.purchase-infoContainer {
+    width: 60%;
+    height: 40%;
+    margin: 2% auto;
+    padding: 3% 2%;
+    border: 1px solid var(--black-Color);
+    border-radius: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.purchase-productImageContainer {
+    width: 26%;
+    height: 26%;
+    margin: 0.5% 3% auto 1%;
+    border: 2px solid gainsboro;
+    padding: 5%;
+    border-radius: 10%;
+}
+
+.purchase-productImageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.purchase-form {
+    width: 50%;
+    height: 100%;
+    margin: auto 5% auto 0;
+    
+}
+
+.input-normal {
+    width: 100%;
+    height: 30%;
+    padding: 3% 5%;
+}
+
+.input-age {
+    width: 25%;
+    padding: 3%;
+    text-align: center;
+}
+
+.input-normal, .input-age {
+    margin-bottom: 5%;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* ----------------------------COMPRA---------------------------- */
+.success {
+    width: 80%;
+    height: 90%;
+    margin: 10% auto;
+}
+
+.success-imageContainer, .success-Title, .return-message {
+    text-align: center;
+    color: var(--white-totalColor);
+}
+
+.return-message a {
+    text-decoration: none;
+    color: #A34850;
+}
