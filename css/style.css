@@ -336,20 +336,28 @@ h1,h2,h3,h4,h5,h6,p {
 
 .question-container {
     border: 1px solid var(--gray-darkerColor);
-    height: 40%;
+    height: auto;
     margin-bottom: 10%;
 }
-
 .question {
     background-color: var(--gray-darkColor);
     padding: 5px;
+}
+.question:hover {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+.question h3{
     font-family: var(--open-SansFont);
     font-size: 90%;
     font-weight: normal;
     text-align: center;
+    cursor: pointer;
 }
 
 .question-answer {
+    display: none;
     background-color: var(--white-lightColor);
     padding: 2% 3%;
     font-size: 90%;
