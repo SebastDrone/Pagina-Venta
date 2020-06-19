@@ -1,3 +1,2 @@
-mochila.xd
-imagen/
-fonts/
+src/stylus/*
+*.config
