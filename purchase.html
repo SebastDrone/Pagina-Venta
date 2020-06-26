@@ -4,49 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imagen/backpack.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/4k.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/ico/ico.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Mochilas Para Ti</title>
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo-imageContainer">
-            <img class="logo-title" src="imagen/MuchilasParaTi.com.svg" alt="logo">
+        <a href="index.html" class="header__logo">
+            <img src="https://user-images.githubusercontent.com/54127990/84959249-9817da00-b0c4-11ea-987d-35aec3ca0bf1.png" alt="logo">
         </a>
-        <nav class="menu-Bar">
-            <ul class="menu-itemContainer">
-                <li class="menu-item"><a href="index.html">Inicio</a></li>
-                <li class="menu-item"><a href="tienda.html">Tienda</a></li>
-                <li class="menu-item"style="display: none"><a href="#">Sobre Nosotros</a></li>
-                <li class="menu-item"><a href="faq.html">FAQ</a></li>
+        <nav class="header__menu">
+            <ul class="header__menu-container">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
     </header>
 <!-- ----------------FIN HEADER----------------------------------------------- -->
-    <section class="purchase-infoContainer">
-        <figure class="purchase-productImageContainer">
-            <img src="imagen/Recomendation.png" alt="Producto Comprado">
+    <section class="purchase">
+        <figure class="purchase__pic">
+            <img src="https://user-images.githubusercontent.com/54127990/85196785-272e1900-b2a2-11ea-844e-f313ed31dd18.png" alt="Producto Comprado">
         </figure>
-        <form action="succesful.html" method="post" class="purchase-form">
-            <input class="input-normal" type="text" name="name-user" id="name-user" placeholder="Nombre">
-            <input class="input-normal" type="text" name="surname-user" id="surname-user" placeholder="Apellidos">
-            <input class="input-normal" type="email" name="mail-user" id="mail-user" placeholder="E-mail">
-            <input class="input-age" class="input-age" type="text" name="day-user" id="day-user" placeholder="DD" min="1" max="31">
-            <input class="input-age" type="text" name="month-user" id="month-user" placeholder="MM">
-            <input class="input-age" type="text" name="year-user" id="year-user" placeholder="AAAA">
+        <form action="" method="post" class="purchase__form">
+            <div class="purchase__form-input">
+                <input class="input-normal" type="text" name="name-user" id="name-user" placeholder="Nombre">
+                <input class="input-normal" type="text" name="surname-user" id="surname-user" placeholder="Apellidos">
+            </div>
+            <div class="purchase__form-input">
+                <input class="input-large" type="email" name="mail-user" id="mail-user" placeholder="E-mail">
+            </div>
+            <div class="purchase__form-input">
+                <input class="input-small" class="input-age" type="text" name="day-user" id="day-user" placeholder="DD" min="1" max="31">
+                <select name="" id="" class="input-small">
+                    <option value="">Enero</option>
+                    <option value="">Febrero</option>
+                    <option value="">Marzo</option>
+                    <option value="">Abril</option>
+                    <option value="">Mayo</option>
+                    <option value="">Junio</option>
+                    <option value="">Julio</option>
+                    <option value="">Agosto</option>
+                    <option value="">Septiembre</option>
+                    <option value="">Octubre</option>
+                    <option value="">Noviembre</option>
+                    <option value="">Diciembre</option>
+                </select>
+                <input class="input-small" type="text" name="year-user" id="year-user" placeholder="AAAA">
+            </div>
             <br>
-            <button type="submit" class="final-purchase">Comprar</button>
+            <div class="purchase__form-input">
+                <div class="input-large">
+                    <a href="succesful.html">
+                        <span>
+                            Comprar
+                        </span>
+                    </a>
+                </div>
+            </div>
         </form>
     </section>
 <!-- ----------------FIN FORM------------------------------------- -->
-    <footer class="footer footer-purchase">
-        <p class="terms-condition"><a href="terms.html">Terminos y Condiciones</a></p>
-        <p class="terms-condition"><a href="credits.html">Credito de las imagenes</a></p>
-        <p class="terms-condition"><a href="mailto:con">mochilas@contact.com</a></p>
-    </footer>
+<footer class="footer">
+    <p class="footer__terms-condition"><a href="terms.html">Terminos y Condiciones</a></p>
+    <p class="footer__social-media">
+        <i class="icon-facebook2"></i>
+        <i class="icon-instagram"></i>
+        <i class="icon-twitter"></i>
+        <i class="icon-pinterest"></i>
+    </p>
+    <p class="footer__mail"><a href="mailto:con">mochilas@contact.com</a></p>
+</footer>
 </body>
 </html>
